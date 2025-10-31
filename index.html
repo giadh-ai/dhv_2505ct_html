@@ -42,30 +42,62 @@
   </header>
 
   <body>
-    <div id="noidung" style=" width: 100%; background-image: url(./assets/images/background_trong_dong.jpg);">
+    <div
+      id="noidung"
+      style="
+        width: 100%;
+        height: 100vh;
+        background-image: url('./assets/images/background_trong_dong.jpg');
+        background-size: cover; /* Phủ kín toàn màn hình */
+        background-repeat: no-repeat; /* Không lặp lại */
+        background-position: center; /* Căn giữa ảnh */
+      "
+    >
       <div
         id="divhoten"
         style="
           display: flex;
           flex-direction: row;
-          background-color: antiquewhite;
-          width: 1200px;
+          background-color: rgba(
+            250,
+            235,
+            215,
+            0.9
+          ); /* antiquewhite có độ mờ nhẹ */
+          max-width: 1200px;
           align-items: center;
-          margin: 0 auto; 
-
+          margin: 0 auto;
+          padding: 20px;
+          border-radius: 15px;
         "
       >
-        <div><img src="./assets/images/image1.jpg" width="300" /></div>
+        <!-- Ảnh chân dung trong vòng tròn -->
+        <div style="margin-right: 30px">
+          <img
+            src="./assets/images/image1.jpg"
+            style="
+              width: 200px;
+              height: 200px;
+              border-radius: 50%; /* Bo tròn */
+              object-fit: cover; /* Cắt ảnh vừa khít vòng tròn */
+              border: 4px solid #fff; /* Viền trắng quanh ảnh */
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ */
+            "
+            alt="Ảnh chân dung"
+          />
+        </div>
+
+        <!-- Thông tin cá nhân -->
         <div>
-          <p><b> ĐINH HOÀNG GIA</b></p>
-          <p>Mã phát triển: CNTT 01</p>
-          <p>
-              <ul>
-                <li>SĐT: 0985580102</li>
-                <li>Email: dinhhoanggia@gmail.com</li>
-                <li>Website: dhv.edu.vn</li>
-              </ul>
+          <p style="font-size: 24px; font-weight: bold; margin-bottom: 5px">
+            ĐINH HOÀNG GIA
           </p>
+          <p style="margin: 5px 0">Mã phát triển: CNTT 01</p>
+          <ul style="margin: 5px 0; padding-left: 20px">
+            <li>SĐT: 0985580102</li>
+            <li>Email: dinhhoanggia@gmail.com</li>
+            <li>Website: dhv.edu.vn</li>
+          </ul>
         </div>
       </div>
     </div>
